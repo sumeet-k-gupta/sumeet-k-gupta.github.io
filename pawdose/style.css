@@ -1,0 +1,26 @@
+:root { --bg: #FBF6F0; --surface: #FFFFFF; --text: #2B211C; --muted: #6B5D55; --brand: #B8482A; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1C1714; --surface: #2A231F; --text: #F4ECE4; --muted: #BFB1A7; --brand: #E88A6A; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--brand); }
+p, li { color: var(--text); }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--brand); }
+.card { background: var(--surface); border-radius: 16px; padding: 4px 20px 12px; margin-top: 16px; }
+header.site { max-width: 680px; margin: 0 auto; padding: 20px 16px 0; display: flex; align-items: center; gap: 10px; }
+header.site a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+header.site img { width: 32px; height: 32px; border-radius: 8px; }
+footer.site { max-width: 680px; margin: 0 auto; padding: 24px 16px 48px; color: var(--muted); font-size: 14px; }
+footer.site a { color: var(--muted); margin-right: 16px; }
+.hero { text-align: center; padding-top: 24px; }
+.hero img { width: 120px; height: 120px; border-radius: 27px; box-shadow: 0 8px 24px rgba(43,33,28,.15); }
+.hero h1 { font-size: 36px; margin-top: 20px; }
+.hero p { font-size: 19px; color: var(--muted); max-width: 520px; margin: 8px auto 0; }
+.badge { display: inline-block; margin-top: 24px; padding: 12px 20px; border-radius: 12px; background: var(--brand); color: #fff; font-weight: 600; text-decoration: none; }
+.features { display: grid; gap: 12px; margin-top: 40px; }
+.features .card h2 { margin-top: 16px; font-size: 18px; }
+@media (min-width: 640px) { .features { grid-template-columns: 1fr 1fr; } }
